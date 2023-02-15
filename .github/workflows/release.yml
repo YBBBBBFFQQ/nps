@@ -11,6 +11,7 @@ jobs:
   build_assets:
     
     runs-on: ubuntu-latest
+    container: node:16.16.0
     steps:
 
     - name: Set up Go 1.x
@@ -75,6 +76,7 @@ jobs:
   build_android:
     
     runs-on: ubuntu-latest
+    container: node:16.16.0
     steps:
 
     - name: Check out code into the Go module directory
@@ -95,6 +97,7 @@ jobs:
   build_spk:
     
     runs-on: ubuntu-latest
+    container: node:16.16.0
     steps:
 
     - name: Check out code into the Go module directory
